@@ -87,7 +87,7 @@ li {
   color: black;
 }
 
-.newsbutton {
+.smallbutton {
   background-color: black;
   border: 2px solid white;
   border-radius: 15px;
@@ -107,7 +107,7 @@ li {
   cursor: not-allowed;
 }
 
-.newsbutton:hover {
+.smallbutton:hover {
   background-color: white;
   border: 2px solid black;
   color: black;
