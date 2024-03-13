@@ -28,6 +28,11 @@ li {
   font-size: 115%;
 }
 
+code{
+  color: white;
+  background-color: black;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
