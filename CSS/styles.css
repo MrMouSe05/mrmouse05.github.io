@@ -23,6 +23,10 @@ p {
   font-size: 115%;
 }
 
+p.center {
+  text-align: center;
+}
+
 li {
   color: whitesmoke;
   font-size: 115%;
