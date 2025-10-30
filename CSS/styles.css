@@ -51,6 +51,11 @@ code{
   width: 50%;
 }
 
+.centered {
+  margin: auto;
+  width: auto;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
